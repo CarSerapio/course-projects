@@ -1,0 +1,89 @@
+* { 
+	font-family: 'Roboto Flex', sans-serif;
+	box-sizing: border-box;  
+}
+
+h1 {
+	text-align: center;
+	font-size: 28px;
+	padding-top: 10px; 
+	padding-bottom: 30px; 
+}
+
+/* BASE STYLES */ 
+
+.grid-container { 
+	display: grid; 
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px; 
+	padding: 10px;
+}
+
+.grid-container > div { 
+	background-color: #BEBEBE;
+	text-align: center; 
+	border: 1px solid black; 
+	padding: 50px 20px 20px 20px;
+}
+
+.menu-tag { 
+	position: absolute;
+	top: 0px; 
+	right: 0px;
+	width: 40%;
+	display: block; 
+	border-style: none none solid solid; 
+	border-color: black; 
+	border-width: 1px; 
+	font-weight: 700px; 
+}
+
+.menu-tag > p { 
+	font-size: 20px; 
+	margin: 10px; 
+}
+
+.chicken { 
+	background-color: #F7BFBE; 
+
+}
+
+.beef { 
+	background-color: #850101; 
+	color: white; 
+}
+
+.sushi { 
+	background-color: #FFEF77; 
+}
+
+/* RESPONSIVE STYLES */ 
+
+/* Desktop view */ 
+@media (min-width: 992px) { 
+	#item1, #item2, #item3 { 
+		position: relative; 
+	}
+}
+
+/* Tablet view */ 
+@media (min-width: 768px) and (max-width: 991px) { 
+	#item1, #item2, #item3 { 
+		position: relative; 
+	}
+	#item3 { 
+		grid-column: 1 / span 2;
+	}
+}
+
+/* Mobile view */ 
+@media (max-width: 767px) { 
+	#item1, #item2, #item3 { 
+		grid-column: 1 / span 2;
+		position: relative; 
+	}
+}
+
+
+
+
